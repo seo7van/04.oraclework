@@ -52,5 +52,7 @@ alter user tjoeun quota 30M on users;
 
 
 
-
-
+alter session set "_oracle_script" = true;
+create user chun identified by 1234;
+GRANT RESOURCE, CONNECT TO chun;
+alter user chun default tablespace users quota unlimited on users;
