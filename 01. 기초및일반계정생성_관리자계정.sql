@@ -140,3 +140,13 @@ alter session set "_oracle_script" = true;
 create user dicom identified by "1234";
 grant resource, connect to dicom;
 alter user dicom default tablespace users quota unlimited on users;
+
+alter session set "_oracle_script" = true; 
+create user temp identified by "1234";
+grant resource, connect to temp;
+alter user temp default tablespace users quota unlimited on users;
+
+alter session set "_oracle_script" = true; 
+create user tec identified by "1234";
+grant resource, connect to tec;
+alter user tec default tablespace users quota unlimited on users;
